@@ -1,0 +1,26 @@
+<p>This method allows users to retrieve a &#8216;thing&#8217;.</p>
+
+<h3 id='request'>Request</h3>
+
+<ul>
+<li>The headers must include a <strong>valid authentication token</strong>.</li>
+</ul>
+
+<h3 id='response'>Response</h3>
+
+<p>Sends back details of a single &#8216;thing&#8217;.</p>
+
+<p><code>Status: 200 OK</code> <code>{
+    {
+        id: thing_2,
+        parent: &#39;Furniture&#39;
+	name: &#39;Tables and Chairs&#39;
+	description: &#39;Tables, chairs, and various related things to sit on or at.&#39;
+    }
+}</code></p>
+
+<p>For errors responses, see the <a href='#response-status-codes'>response status codes documentation</a>.</p>
+
+<h3 id='testing'>Testing</h3>
+
+<p>curl hostname:port/thing/id</p>
